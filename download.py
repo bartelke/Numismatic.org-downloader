@@ -35,8 +35,7 @@ for i in range(start_range, end_range + 1, step):
                 handler.write(img_data)
         except:
             print(f"Failed to download {img_url}")
-    
-    # Status pobierania
+
     print(f"Page {i // step + 1} of {(end_range // step) + 1} completed.")
     time.sleep(1)  # give the server a bit of rest
 print("Download completed!")
