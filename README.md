@@ -9,4 +9,14 @@ The goal of this project is to gather images of Roman coins, which can serve as 
 - `download.py`: Downloads images of coins from a specified Roman emperor.
 - `delete.py`: Removes specific coin images (either obverses or reverses) from the dataset based on image numbering.
 
-Some non-coin images are also present in the dataset due to the layout of the ANS website. These can be manually removed, though a future improvement may automate this cleanup process.
+## How to use
+
+To install required packages, run:
+
+```
+pip install -r requirements.txt
+```
+
+Set the emperor's name and the number of photos to download in `download.py` (make sure to check how many there are maximum on the page for the given category). Run the script (it will take a while).
+
+If you only want to "clean" the folder of downloaded images containing page elements, set _clean_only_ to True in `delete.py`. If you also want to remove obverses or reverses, set this parameter to False. You can use the _remove_obverse_ parameter to specify whether to remove obverses (True) or reverses (False). Run the program `delete.py`.
